@@ -27,10 +27,36 @@ uv run pytest
 - 程式碼品質有改善
 
 ## 完成後
-如果有重構：`git commit -m "done-refactor: 說明改善內容"`  
-如果無需重構：`git commit -m "done-refactor: no refactoring needed"`  
-然後告訴教練 `done-refactor`
+
+### 步驟：提交你的重構階段
+1. 如果有修改，將檔案加入 git：
+   ```bash
+   git add fizzbuzz.py
+   ```
+
+2. 提交變更：
+   ```bash
+   # 如果有重構
+   git commit -m "done-refactor: 說明改善內容"
+   
+   # 如果無需重構
+   git commit -m "done-refactor: no refactoring needed"
+   ```
+
+3. 告訴教練你完成了：
+   ```
+   done-refactor
+   ```
+
+### 下一步
+教練會：
+1. 檢查你的重構品質
+2. 確認測試仍然通過
+3. 如果通過檢查，可能會：
+   - 給你新的需求開始下一輪 TDD
+   - 或恭喜你完成當前階段
 
 ## 注意事項
 - 如果程式碼已經很簡潔，可以不重構
 - 重構是為了改善，不是為了改變
+- 每次修改後都要執行測試確保仍然通過
