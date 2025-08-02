@@ -6,18 +6,41 @@
 寫一個會失敗的測試
 
 ## 當前任務
-1. 檢查 `test_fizzbuzz.py` 中的測試：
-   ```python
-   def test_fizzbuzz_returns_1_for_1():
-       assert fizzbuzz(1) == "1"
-   ```
 
-2. 執行測試確認它會失敗：
-   ```bash
-   uv run pytest
-   ```
+### 步驟 1：建立測試檔案
+使用你喜歡的編輯器建立 `test_fizzbuzz.py` 檔案：
+```bash
+# 使用 VS Code (如果有的話)
+code test_fizzbuzz.py
 
-3. 如果需要加入新測試（根據教練指示），請先寫測試讓它失敗
+# 或使用 nano
+nano test_fizzbuzz.py
+
+# 或使用 vim
+vim test_fizzbuzz.py
+```
+
+### 步驟 2：寫入第一個測試
+在 `test_fizzbuzz.py` 中輸入以下內容：
+```python
+from fizzbuzz import fizzbuzz
+
+def test_fizzbuzz_returns_1_for_1():
+    assert fizzbuzz(1) == "1"
+```
+
+### 步驟 3：儲存檔案並執行測試
+儲存檔案後執行：
+```bash
+uv run pytest
+```
+
+### 步驟 4：確認紅燈
+測試應該會失敗並顯示類似訊息：
+```
+ModuleNotFoundError: No module named 'fizzbuzz'
+```
+這就是我們要的紅燈狀態！
 
 ## 成功標準
 - 測試執行時顯示失敗（紅燈）

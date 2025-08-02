@@ -40,25 +40,12 @@ PRACTICE_BRANCH="practice-$(date +%Y%m%d-%H%M%S)"
 echo "🌿 建立練習分支：$PRACTICE_BRANCH"
 git checkout -b "$PRACTICE_BRANCH"
 
-# 建立第一個失敗測試
-cat > test_fizzbuzz.py << 'EOF'
-from fizzbuzz import fizzbuzz
-
-def test_fizzbuzz_returns_1_for_1():
-    assert fizzbuzz(1) == "1"
-EOF
-
-# 建立最小實作
-cat > fizzbuzz.py << 'EOF'
-def fizzbuzz(n):
-    pass
-EOF
+# 環境準備完成，等待學生開始編寫程式碼
 
 echo "✅ 環境初始化完成！"
 echo ""
 echo "🎯 準備開始 TDD 練習："
 echo "📍 目前在練習分支：$PRACTICE_BRANCH"
-echo "1. 執行測試：uv run pytest"
-echo "2. 開始第一個紅燈階段！"
+echo "📝 現在請告訴教練你準備好了，教練會指導你建立第一個測試"
 echo ""
 echo "💡 提示：完成練習後可切回 main 分支：git checkout main"

@@ -6,11 +6,33 @@
 寫最少的程式碼讓測試通過
 
 ## 當前任務
-修改 `fizzbuzz.py` 讓測試通過：
 
+### 步驟 1：建立實作檔案
+使用編輯器建立 `fizzbuzz.py` 檔案：
+```bash
+# 使用你喜歡的編輯器
+code fizzbuzz.py
+# 或 nano fizzbuzz.py
+# 或 vim fizzbuzz.py
+```
+
+### 步驟 2：寫入最小實作
+在 `fizzbuzz.py` 中實作 fizzbuzz 函數，讓這個測試通過：
 ```python
 def test_fizzbuzz_returns_1_for_1():
     assert fizzbuzz(1) == "1"
+```
+
+### 步驟 3：測試你的實作
+儲存檔案後執行測試：
+```bash
+uv run pytest
+```
+
+### 步驟 4：確認綠燈
+測試應該要通過並顯示類似訊息：
+```
+1 passed
 ```
 
 ## 最小實作原則
