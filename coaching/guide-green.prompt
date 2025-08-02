@@ -1,0 +1,34 @@
+# 綠燈階段指導
+
+你正在進行 TDD 的**綠燈階段**。
+
+## 目標
+寫最少的程式碼讓測試通過
+
+## 當前任務
+修改 `fizzbuzz.py` 讓測試通過：
+
+```python
+def test_fizzbuzz_returns_1_for_1():
+    assert fizzbuzz(1) == "1"
+```
+
+## 最小實作原則
+- 只寫讓**這個測試**通過的程式碼
+- 不考慮其他情況
+- 不提前實作未來的需求
+
+## 執行測試
+```bash
+uv run pytest
+```
+
+## 成功標準
+- 所有測試都通過（綠燈）
+- 程式碼簡單直接
+
+## 完成後
+執行 `git commit -m "done-green: implement fizzbuzz(1) returns '1'"` 並告訴教練 `done-green`
+
+## 提示
+想想：讓 fizzbuzz(1) 回傳 "1" 的最簡單方法是什麼？

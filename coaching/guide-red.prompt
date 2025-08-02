@@ -1,0 +1,31 @@
+# 紅燈階段指導
+
+你正在進行 TDD 的**紅燈階段**。
+
+## 目標
+寫一個會失敗的測試
+
+## 當前任務
+1. 檢查 `test_fizzbuzz.py` 中的測試：
+   ```python
+   def test_fizzbuzz_returns_1_for_1():
+       assert fizzbuzz(1) == "1"
+   ```
+
+2. 執行測試確認它會失敗：
+   ```bash
+   uv run pytest
+   ```
+
+3. 如果需要加入新測試（根據教練指示），請先寫測試讓它失敗
+
+## 成功標準
+- 測試執行時顯示失敗（紅燈）
+- 失敗原因明確（通常是功能未實作）
+
+## 完成後
+執行 `git commit -m "done-red: add test for fizzbuzz(1) returns '1'"` 並告訴教練 `done-red`
+
+## 注意事項
+- 這階段**只寫測試**，不實作功能
+- 確保測試會失敗才是正確的紅燈
