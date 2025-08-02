@@ -26,6 +26,7 @@
 
 **如果已初始化：**
 - [ ] 檢查是否有 `test_fizzbuzz.py` 和 `fizzbuzz.py`
+- [ ] 確認目前在練習分支（practice-YYYYMMDD-HHMMSS）
 - [ ] 確認 git 狀態
 
 ## 第 4 步：開始第一輪 TDD

@@ -17,7 +17,7 @@
 ## TDD 練習流程
 
 ### 學生工作流程
-1. 執行 `./coaching/init.sh` 初始化環境
+1. 執行 `./coaching/init.sh` 初始化環境（自動建立練習分支）
 2. 遵循紅-綠-重構循環：
    - **紅燈**：寫失敗測試 → `git commit -m "done-red: 描述"`
    - **綠燈**：最少實作讓測試通過 → `git commit -m "done-green: 描述"`

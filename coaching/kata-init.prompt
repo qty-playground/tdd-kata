@@ -33,4 +33,4 @@
 ./coaching/init.sh
 ```
 
-這會在當前目錄建立完整的 FizzBuzz kata 環境。
+這會在當前目錄建立完整的 FizzBuzz kata 環境，並自動建立練習分支。

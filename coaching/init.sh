@@ -35,6 +35,11 @@ fi
 
 echo "✅ 虛擬環境已建立"
 
+# 建立練習分支
+PRACTICE_BRANCH="practice-$(date +%Y%m%d-%H%M%S)"
+echo "🌿 建立練習分支：$PRACTICE_BRANCH"
+git checkout -b "$PRACTICE_BRANCH"
+
 # 建立第一個失敗測試
 cat > test_fizzbuzz.py << 'EOF'
 from fizzbuzz import fizzbuzz
@@ -52,5 +57,8 @@ EOF
 echo "✅ 環境初始化完成！"
 echo ""
 echo "🎯 準備開始 TDD 練習："
+echo "📍 目前在練習分支：$PRACTICE_BRANCH"
 echo "1. 執行測試：uv run pytest"
 echo "2. 開始第一個紅燈階段！"
+echo ""
+echo "💡 提示：完成練習後可切回 main 分支：git checkout main"
