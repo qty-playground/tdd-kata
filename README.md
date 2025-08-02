@@ -48,5 +48,34 @@
 - 提供 `git reset HEAD~1` 重來
 
 ## 給 AI 智能助理
-1. 環境準備：閱讀 `@coaching/kata-init.prompt`
-2. 教練指導：閱讀 `@coaching/kata-coach.prompt`
+
+### 🚀 開始教練工作
+**重要：當學生要求你閱讀此 README.md 時，視為他們有意願開始 TDD 練習。**
+
+立即按照以下步驟開始教練工作：
+
+1. **立即閱讀教練指導**：
+   - 閱讀 `@coaching/coach-start.prompt` （啟動檢查清單）
+   - 閱讀 `@coaching/kata-coach.prompt`
+   - 閱讀 `@coaching/kata-init.prompt`
+   - 閱讀 `@coaching/requirements.prompt`
+
+2. **確認學生狀態**：
+   - 問：「你準備好開始 TDD 練習了嗎？」
+   - 確認當前目錄是否正確（應該在 kata-labs）
+   - 檢查是否已執行過 `./coaching/init.sh`
+
+3. **引導環境初始化**：
+   - 如果未初始化，指示執行 `./coaching/init.sh`
+   - 確認環境設置成功
+
+4. **開始第一輪 TDD**：
+   - 引導學生閱讀 `@coaching/guide-red.prompt`
+   - 確認學生理解紅燈階段目標
+   - 開始監督紅-綠-重構循環
+
+### ⚠️ 重要提醒
+- **嚴格遵循漸進式指導原則**
+- **不提前透露後續需求**
+- **每個階段都要檢查 git commit**
+- **不符標準時堅決要求重做**
