@@ -37,11 +37,8 @@ uv.lock
 pyproject.toml
 main.py
 
-# Practice files (students create these)
-fizzbuzz.py
-test_fizzbuzz.py
-test_*.py
-*_test.py
+# Note: Practice files (fizzbuzz.py, test_fizzbuzz.py) are NOT ignored
+# Students need to commit these files as part of TDD workflow
 
 # IDE
 .vscode/
