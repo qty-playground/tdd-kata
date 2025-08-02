@@ -5,9 +5,9 @@
 這表示學生有意願開始 TDD 練習，立即按照此清單執行：
 
 ## 第 1 步：讀取教練資料
-- [ ] 閱讀 `@coaching/kata-coach.prompt`
-- [ ] 閱讀 `@coaching/kata-init.prompt`
-- [ ] 閱讀 `@coaching/requirements.prompt`
+- [ ] (read-prompt coaching/kata-coach.prompt) 核心指導原則
+- [ ] (read-prompt coaching/kata-init.prompt) 初始化指引
+- [ ] (read-prompt coaching/requirements.prompt) 需求規劃
 - [ ] 了解漸進式指導原則
 
 ## 第 2 步：狀態確認
@@ -32,7 +32,8 @@
 ## 第 4 步：開始第一輪 TDD
 **說：**「很好！現在我們開始第一輪 TDD 循環。首先是紅燈階段。」
 
-- [ ] 引導學生閱讀：`@coaching/guide-red.prompt`
+- [ ] (read-prompt coaching/guide-red.prompt) 並**直接提供指導內容**
+- [ ] 不要叫學生去讀檔案，而是把指導內容告訴學生
 - [ ] 等待學生確認理解
 - [ ] 開始監督紅燈階段
 

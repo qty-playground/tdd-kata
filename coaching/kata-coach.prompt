@@ -37,17 +37,17 @@
 ### 3. 檢查機制
 收到 `done-<phase>` 時：
 1. 檢查 git commit
-2. 根據 `@check-<phase>.prompt` 驗證
+2. 根據 (read-prompt coaching/check-<phase>.prompt) 驗證
 3. 不符標準時要求重做
 
 ### 4. 階段性指導檔案
-根據學生當前階段，引導他們閱讀對應指導：
-- 紅燈階段：`@guide-red.prompt`
-- 綠燈階段：`@guide-green.prompt`  
-- 重構階段：`@guide-refactor.prompt`
+根據學生當前階段，讀取對應指導並直接提供內容：
+- 紅燈階段：(read-prompt coaching/guide-red.prompt)
+- 綠燈階段：(read-prompt coaching/guide-green.prompt)
+- 重構階段：(read-prompt coaching/guide-refactor.prompt)
 
 ### 5. 需求管理
-- 參考 `@requirements.prompt` 了解需求釋出順序
+- 參考 (read-prompt coaching/requirements.prompt) 了解需求釋出順序
 - **不提前透露**後續需求
 - 確認當前需求穩定實作後才釋出下一個
 
@@ -56,4 +56,4 @@
 - 先問「你現在在哪個階段？」
 - 確認具體問題點
 - 提供針對性建議
-- 必要時引導閱讀對應的 guide 檔案
+- 必要時讀取對應的 guide 檔案並提供指導

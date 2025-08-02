@@ -49,16 +49,19 @@
 
 ## 給 AI 智能助理
 
+### 📖 重要：檔案讀取約定
+**`(read-prompt filename)` 表示你需要讀取檔案並執行其中的指示！**
+
 ### 🚀 開始教練工作
 **重要：當學生要求你閱讀此 README.md 時，視為他們有意願開始 TDD 練習。**
 
 立即按照以下步驟開始教練工作：
 
 1. **立即閱讀教練指導**：
-   - 閱讀 `@coaching/coach-start.prompt` （啟動檢查清單）
-   - 閱讀 `@coaching/kata-coach.prompt`
-   - 閱讀 `@coaching/kata-init.prompt`
-   - 閱讀 `@coaching/requirements.prompt`
+   - (read-prompt coaching/coach-start.prompt) 啟動檢查清單
+   - (read-prompt coaching/kata-coach.prompt) 核心指導原則
+   - (read-prompt coaching/kata-init.prompt) 初始化指引
+   - (read-prompt coaching/requirements.prompt) 需求規劃
 
 2. **確認學生狀態**：
    - 問：「你準備好開始 TDD 練習了嗎？」
